@@ -16,13 +16,12 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+" Vundle > Plugins "
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'pangloss/vim-javascript'
-
-" Vundle > Plugins "
-Bundle 'bling/vim-airline'
-Bundle 'The-NERD-tree'
-Bundle 'SuperTab'
+Plugin 'bling/vim-airline'
+Plugin 'The-NERD-tree'
+Plugin 'SuperTab'
 
 call vundle#end()
 filetype plugin indent on
