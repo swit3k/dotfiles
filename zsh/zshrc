@@ -28,3 +28,9 @@ antigen theme af-magic
 #
 # # Tell antigen that you're done.
 antigen apply
+
+# Aliases
+if [ -f ~/.zshalias ]; then
+    source ~/.zshalias
+fi
+
