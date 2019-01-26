@@ -5,6 +5,8 @@ SAVEHIST=1000
 bindkey -v
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
+
+fpath=(~/.zsh/completion $fpath)
 zstyle :compinstall filename '~/.zshrc'
 
 autoload -Uz compinit
@@ -14,18 +16,18 @@ source ~/antigen/antigen.zsh
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
-#
+
 # # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen bundle git
 antigen bundle command-not-found
-#
+antigen bundle mvn
+
 # # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
-#
+
 # # Load the theme.
-#antigen theme robbyrussell
 antigen theme af-magic
-#
+
 # # Tell antigen that you're done.
 antigen apply
 
@@ -34,3 +36,18 @@ if [ -f ~/.zshalias ]; then
     source ~/.zshalias
 fi
 
+# Functions
+#if [ -d ~/dev/dotfiles/zsh/functions ]; then
+#    fpath=$(~/dev/dotfiles/zsh/functions fpath)
+#    autoload test
+#fi
+
+export NVM_DIR="/home/pawel/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+nvm use v8.11.3
+
+# add this configuration to ~/.zshrc
+export HISTFILE=~/.zsh_history  # ensure history file visibility
+export HH_CONFIG=hicolor        # get more colors
+
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
