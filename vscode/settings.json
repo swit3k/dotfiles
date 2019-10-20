@@ -1,0 +1,5 @@
+{
+    "window.zoomLevel": 2,
+    "files.autoSave": "onFocusChange",
+    "workbench.editor.showTabs": false
+}
