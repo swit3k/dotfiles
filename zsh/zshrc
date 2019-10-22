@@ -21,6 +21,7 @@ antigen use oh-my-zsh
 antigen bundle git
 antigen bundle command-not-found
 antigen bundle mvn
+antigen bundle "greymd/docker-zsh-completion"
 
 # # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
