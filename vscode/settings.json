@@ -1,5 +1,27 @@
 {
     "window.zoomLevel": 2,
     "files.autoSave": "onFocusChange",
-    "workbench.editor.showTabs": false
+    "workbench.editor.showTabs": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true,
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules": true,
+        "**/node_modules/*/**": true
+    },
+    "files.watcherExclude": {
+        "**/node_modules": true,
+        "**/node_modules/*/**": true
+    },
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "window.restoreWindows": "none",
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.wordWrapColumn": 120,
+    "explorer.openEditors.visible": 4,
+    "sync.gist": "84852ea2ce3e639d6779ed3e99a27d41"
 }

@@ -31,5 +31,13 @@
         "key": "ctrl+`",
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "terminalFocus"
+    },
+    {
+        "key": "alt+2",
+        "command": "-workbench.action.openEditorAtIndex2"
+    },
+    {
+        "key": "alt+2",
+        "command": "workbench.action.terminal.focus"
     }
 ]

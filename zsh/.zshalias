@@ -1,0 +1,3 @@
+alias ll='ls -alh'
+alias cddev='cd /home/pawels/dev'
+alias cdwinebot='cd /home/pawels/winebot'

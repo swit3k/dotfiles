@@ -20,6 +20,7 @@ antigen use oh-my-zsh
 # # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen bundle git
 antigen bundle command-not-found
+antigen bundle docker
 antigen bundle mvn
 antigen bundle "greymd/docker-zsh-completion"
 
@@ -47,3 +48,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 nvm use v10.16.3
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/pawels/.sdkman"
+[[ -s "/home/pawels/.sdkman/bin/sdkman-init.sh" ]] && source "/home/pawels/.sdkman/bin/sdkman-init.sh"
