@@ -30,6 +30,9 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 # # Load the theme.
 antigen theme af-magic
 
+# # Prompt
+antigen theme spaceship-prompt/spaceship-prompt
+
 # # Tell antigen that you're done.
 antigen apply
 
